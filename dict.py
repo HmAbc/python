@@ -11,4 +11,8 @@ print(dict1)
 
 print(str(dict1))
 list1 = dict1.values()
-print(list1[])
+print(list1)
+
+set1 = set(list1)
+
+print(set1)
