@@ -8,8 +8,8 @@ for char in 'liangdianshui':
 print('\n')
 
 # 2、for循环迭代list
-list1 = [1, 2, 3, 4, 5]
-for num1 in list1:
+lista = [1, 2, 3, 4, 5]
+for num1 in lista:
     print(num1, end = ' ')
 print('\n')
 
@@ -22,3 +22,32 @@ print('\n')
 for value in dict1.values():
     print(value, end = ' ')
 print('\n')
+
+# 如果list里面一个元素有两个变量，也是很容易迭代的
+for x, y in [(1, 'a'), (2, 'b'), (3, 'c')]:
+    print(x, y)
+
+# 迭代器
+# 1、字符创建迭代器对象
+str1 = 'liangdianshui'
+iter1 = iter(str1)
+
+# 2、list对象创建迭代器
+list1 = [1, 2, 3, 4]
+iter2 = iter(list1)
+
+# 3、tuple对象创建迭代器
+tuple1 = (1, 2, 3, 4)
+iter3 = iter(tuple1)
+
+# for循环便利迭代器
+for x in iter1:
+    print(x, end = ' ')
+print('\n------------------')
+
+# next()函数遍历迭代器
+while True:
+    try:
+        print(next(iter3))
+    except StopIteration:
+        break
