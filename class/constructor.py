@@ -11,4 +11,5 @@ class ClassA():
         print('实例化销毁了')
 
 a = ClassA()
+
 del a
