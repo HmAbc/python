@@ -1,6 +1,13 @@
 #!/user/bin/env python3
 # -*- coding: utf-8 -*-
 
+# 创建list的方式
+#
+# list生成式语法
+# [expr for iter_var in iterable]
+# [expr for iter_var in iterable if cond_expr]
+
+# range()函数左闭右开
 list1 = list(range(1, 31))
 print(list1)
 

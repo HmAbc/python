@@ -28,6 +28,8 @@ for x, y in [(1, 'a'), (2, 'b'), (3, 'c')]:
     print(x, y)
 
 # 迭代器
+# 迭代器有两个基本的方法：iter() 和 next(),且字符串，列表或元组对象都可用于创建迭代器，
+# 迭代器对象可以使用常规 for 语句进行遍历，也可以使用 next() 函数来遍历。
 # 1、字符创建迭代器对象
 str1 = 'liangdianshui'
 iter1 = iter(str1)
@@ -48,6 +50,6 @@ print('\n------------------')
 # next()函数遍历迭代器
 while True:
     try:
-        print(next(iter3))
+        print(next(iter3), end=' ')
     except StopIteration:
         break
