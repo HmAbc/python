@@ -31,3 +31,15 @@ for rr in Countdown(30):
 print()
 for rr in reversed(Countdown(30)):
     print(rr, end=' ')
+print()
+
+# 同时迭代多个序列
+# zip(a, b) 会生成一个可返回元组 (x, y) 的迭代器，其中 x 来自 a，y 来自 b。
+# 一旦其中某个序列到底结尾，迭代宣告结束。
+names = ['张三', '李四', '王五']
+ages = [20, 35, 23]
+for name, age in zip(names, ages):
+    print(name, age)
+# 利用zip()函数，生成dict
+dict1 = dict(zip(names, ages))
+print(dict1)
